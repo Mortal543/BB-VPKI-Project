@@ -1,6 +1,6 @@
 # BB-VPKI — Blockchain-Based Vehicular Public Key Infrastructure
 
-BB-VPKI is a Rust-based research implementation of a vehicular Public Key Infrastructure (VPKI) that uses a lightweight in-memory blockchain to record certificate issuance and revocation events, combined with edge caching at roadside units (RSUs) and a pluggable ledger gateway interface (example: Hyperledger Fabric stub). The repository implements end-to-end flows for certificate issuance, revocation, authentication, message signing/verification (V2V), and basic blockchain storage management. This project is intended for academic/project evaluation of latency, throughput, and reliability properties of a BB-VPKI design.
+BB-VPKI is a Rust-based research project implementation of a Vehicular Public Key Infrastructure (VPKI) that uses a lightweight in-memory blockchain to record certificate issuance and revocation events, combined with edge caching at roadside units (RSUs) and a pluggable Hyperledger Fabric gateway interface. This repository implements end-to-end flows for certificate issuance, revocation, authentication, message signing/verification (V2V), and basic blockchain storage management. This project is intended for academic evaluation of latency, throughput, and reliability properties of the BB-VPKI design.
 
 ## Key Features
 
