@@ -1,0 +1,22 @@
+BB-VPKI Performance Metrics Report
+Timestamp,2025-12-04T14:17:38.737866+00:00
+
+Metric,Value,Unit,Target,Status
+Certificate Issuance Rate,19.23,certs/sec,>1000,FAIL
+Revocation Latency,0.00,ms,<100,PASS
+Authentication Delay,1.01,μs,<3000,PASS
+Authentication Delay p50,1.00,μs,N/A,INFO
+Authentication Delay p95,1.00,μs,N/A,INFO
+Authentication Delay p99,1.00,μs,N/A,INFO
+Message Signing Time,376.21,μs,<100,FAIL
+Message Verification Time,426.22,μs,<100,FAIL
+Cache Hit Rate,19.96,%,>85,FAIL
+Blockchain TPS,100.20,transactions/sec,>100,PASS
+Consensus Latency,50.00,ms,N/A,INFO
+Consensus Latency p50,51953.00,ms,N/A,INFO
+Consensus Latency p95,52008.00,ms,N/A,INFO
+Consensus Latency p99,52011.00,ms,N/A,INFO
+Blockchain Size,0.41,MB,N/A,INFO
+Pruned Blocks,0,blocks,N/A,INFO
+Deprecated Certificates,0,count,N/A,INFO
+System Uptime,91,seconds,N/A,INFO

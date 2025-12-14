@@ -1,0 +1,45 @@
+# Rust-specific ignores
+/target
+**/*.rs.bk
+Cargo.lock  # Optional: Include if you want reproducible builds across environments
+
+# macOS-specific ignores
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Project-specific ignores
+# SQLite database
+
+
+# Generated plots
+data/plots/*.png
+
+# Dependency directories (if vendored)
+/vendor
+
+# Local environment files
+.env
+*.env.*
+
+# TLS certificates (if testing locally)
+*.pem
+*.key
+*.crt
+
+# Editor-specific ignores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Docker-related (if you containerize later)
+# Dockerfile.local
+# *.dockerignore
