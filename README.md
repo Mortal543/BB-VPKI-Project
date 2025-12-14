@@ -1,13 +1,13 @@
 # BB-VPKI — Blockchain-Based Vehicular Public Key Infrastructure
 
-BB-VPKI is a Rust-based research project implementation of a Vehicular Public Key Infrastructure (VPKI) that uses a lightweight in-memory blockchain to record certificate issuance and revocation events, combined with edge caching at roadside units (RSUs) and a pluggable Hyperledger Fabric gateway interface. This repository implements end-to-end flows for certificate issuance, revocation, authentication, message signing/verification (V2V), and basic blockchain storage management. This project is intended for academic evaluation of latency, throughput, and reliability properties of the BB-VPKI design.
+BB-VPKI is a Rust-based research project implementation of a Blockchain-based Vehicular Public Key Infrastructure that uses a lightweight in-memory blockchain to record certificate issuance and revocation events, combined with edge caching at roadside units (RSUs) and a pluggable Hyperledger Fabric gateway interface. This repository implements end-to-end flows for certificate issuance, revocation, authentication, message signing/verification (V2V), and basic blockchain storage management. This project is intended for academic evaluation of latency, throughput, and reliability properties of the BB-VPKI design.
 
 ## Key Features
 
 - Certificate Authority (CA) layer with HSM abstraction
 - Edge nodes (RSUs) with LRU cache for certificate validation
 - In-memory blockchain with mining, pruning, and archival support
-- Pluggable ledger gateway interface (Hyperledger Fabric stub provided)
+- Pluggable Hyperledger Fabric gateway interface 
 - Vehicle On-Board Unit (OBU) SDK for signing and verification
 - Comprehensive benchmarking harness that exports CSV reports
 - Instrumentation for cache hit/miss, consensus latency, auth latencies, TPS, and storage footprint
@@ -17,7 +17,7 @@ BB-VPKI is a Rust-based research project implementation of a Vehicular Public Ke
 - `src/pki/` — Certificate Authority and certificate lifecycle management
 - `src/edge/` — Edge node (RSU) implementation and caching logic
 - `src/blockchain/` — Simple blockchain, transactions, block mining, and latency recording
-- `src/network/` — Pluggable gateways (e.g., Hyperledger Fabric stub) and V2V network simulation
+- `src/network/` — Pluggable Hyperledger Fabric gateway and V2V network simulation
 - `src/vehicle/` — On-board unit (OBU) SDK for signing and verifying messages
 - `src/metrics/` — `PerformanceMetrics` model and CSV export utilities
 - `src/main.rs` — Orchestration, system assembly, and benchmarking flow
